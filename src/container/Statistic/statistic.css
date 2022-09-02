@@ -1,0 +1,47 @@
+.app__stat{
+    margin-top: 100px;
+    height: 405px;
+    width: 100%;
+    background: url('../../assets/steli-photos/paralax-img.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app__stat-cards{
+    height: 100%;
+    text-align: center;
+}
+.app__stat-card span{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 125px;
+    color: var(--color-white);
+}
+.app__stat-card p{
+    font-weight: 500;
+    font-size: 30px;
+    font-family: var(--font);
+    color: var(--color-white);
+    line-height: 65px;
+}
+
+@media screen and (max-width: 980px) {
+    .app__stat-cards{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .app__stat-card{
+        margin-bottom: 30px;
+    }
+    .app__stat{
+        height: 100%;
+    }
+    .app__stat-card span{
+        font-size: 90px;
+    }
+    .app__stat-card p{
+        font-size: 24px;
+        line-height: 0;
+    }
+}

@@ -1,0 +1,94 @@
+.app__feedback-btns{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.app__feedback-btns button:hover{
+    background-color: var(--color-black);
+    opacity: .8;
+}
+
+.app__feedback-btns button{
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+
+.feedback__block{
+    width: 620px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+
+    font-family: var(--font);
+
+    position: relative;
+}
+
+.feedback__block p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+.feedback__block div{
+    position: absolute;
+    right: 0;
+    bottom: -280px;
+}
+.feedback__block div h6{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 135%;
+    color: var(--color-black);
+}
+
+.feedback__block div p{
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .feedback__block p{
+        font-size: 16px;
+    }
+}
+
+.slick-slide{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.slick-slide div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 370px;
+}
+
+.app__feedback{
+    position: relative;
+}
+
+.slick-arrow{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 2px solid  var(--color-black);
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    transition: .25s ease-out;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.slick-prev{
+    
+    position: relative;
+    right: 0;
+    top: 0;
+}

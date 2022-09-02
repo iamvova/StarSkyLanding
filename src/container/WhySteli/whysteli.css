@@ -1,0 +1,55 @@
+
+.app__why-card{
+    font-family: var(--font);
+    width: 350px;
+    flex-direction: column;
+}
+
+.app__why-card span{
+    color: var(--color-brown);
+    font-size: 125px;
+    font-weight: 600;
+}
+.app__why-card h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    width: 300px;
+    line-height: 38px;
+}
+
+.app__why-cards div{
+    display: flex;
+    justify-content: center;
+
+    margin-left: 100px;
+}
+.app__why-cards div:first-child{
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .app__why-cards div{
+        flex-wrap: wrap;
+    }
+    .app__why-card{
+        width: 300px;
+    }
+
+}
+@media screen and (max-width: 830px) {
+    .app__why-cards div{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .app__why-card h3{
+        font-size: 20px;
+    }
+    .app__why-card span{
+        font-size: 100px;
+    }
+}

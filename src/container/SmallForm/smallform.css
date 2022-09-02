@@ -1,0 +1,46 @@
+.app__smallForm{
+    height: 405px;
+    width: 100%;
+    background: url('../../assets/steli-photos/paralax-img.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app__smallForm-content{
+    flex-direction: column;
+}
+
+.app__smallForm-content h2{
+    padding-top: 115px;
+    font-size: 36px;
+    font-family: var(--font);
+    color: var(--color-white);
+    font-weight: 400;
+    padding-bottom: 60px;
+}
+
+.app__smallForm-content .smallForm__form input{
+    padding: 8px 290px 8px 10px;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--color-white);
+    font-family: var(--font);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 650px) {
+    .app__smallForm-content .smallForm__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .app__smallForm-content h2{
+        padding-top: 60px;
+        text-align: center;
+    }
+    .app__smallForm-content .smallForm__form input{
+        margin-bottom: 20px;
+        margin-right: 0px;
+        padding: 8px 190px 8px 10px;
+    }
+}
